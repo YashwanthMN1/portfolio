@@ -3,13 +3,13 @@
 This is a simple portfolio built with [FastAPI](https://fastapi.tiangolo.com/) that serves an HTML resume (`index.html`). It is designed to be a single-page application where visitors can view your resume and contact details.
 
 ## Project Structure
-
+```
 portfolio/
 ├── main.py              # FastAPI application
 └── static/             # Folder for static files 
     └── index.html      #  your resume
 
-
+```
 - `main.py`: This is the FastAPI application that serves the `index.html` file as the main route (`/`).
 - `index.html`: Your resume in HTML format, which will be displayed when visiting the root URL of the application.
 - `static/`: A directory for any static assets, like images or CSS files (optional).
