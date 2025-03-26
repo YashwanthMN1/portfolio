@@ -1,1 +1,262 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth M N</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            height: 100vh;
+            background: url('imgs/bg2.png') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .overlay {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 90%;
+            width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-content {
+            font-size: 1rem;
+            text-align: left;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .project-container,
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .project,
+        .skill {
+            width: 150px;
+            text-align: center;
+        }
+
+        .project img,
+        .skill img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: blue;
+        }
+        body {
+            min-width: 1024px;
+            overflow-x: auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                max-width: 100%;
+            }
+
+            .project-container,
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .overlay {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="overlay" style=".scroll-indicator {
+            text-align: center;
+            margin-top: 20%;
+        }
+        .scroll-arrow {
+            width: 100px; /* Set the width of the arrow */
+            height: auto;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+        }">
+            <h1>Yashwanth M N</h1>
+            <p>AI | Cloud | Python</p>
+        </div>
+
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            Hello! I'm Yashwanth, a passionate developer with a deep interest in cloud technologies (AWS & GCP),
+            Artificial Intelligence, and Python development. I specialize in creating AI-powered applications
+            with a focus on computer vision, feature extraction, object detection, and person re-identification
+            (RE-ID). Additionally, I am proficient in Python frameworks such as FastAPI, Flask, and in working
+            with libraries like Pandas, NumPy, and SQLAlchemy.
+        </div>
+
+        <div class="about-content">
+            As a cloud enthusiast, I enjoy leveraging cloud services to build scalable and efficient solutions.
+            My experience with databases includes MongoDB, PostgreSQL, and integrating them into various
+            projects. I’m continuously exploring new AI techniques and cloud advancements to push the boundaries
+            of what can be done in the field of development.
+        </div>
+        <div class="about-content">
+            Feel free to browse through my portfolio to explore my work and connect with me for potential
+            collaborations!
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <a href="https://github.com/YashwanthMN1/ragapp" target="_blank">
+                    <img src="imgs/project1.png" alt="Project 1">
+                    <h3>RAG bot</h3>
+                    <p>The RAG (Retrieval-augmented Generation) app</p>
+                </a>
+            </div>
+            <div class="project">
+                <img src="imgs/vdb.png" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Description of project two.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 style="margin-bottom: 40px;">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="imgs/python.png" alt="HTML">
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/fastapi.png" alt="CSS">
+                <p>Fastapi</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/keras.png" alt="JavaScript">
+                <p>Keras</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/aws.png" alt="CSS">
+                <p>AWS</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/gcp.png" alt="CSS">
+                <p>GCP</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/openaipng" alt="CSS">
+                <p>Open AI</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/hf.svg" alt="CSS">
+                <p>Hugging Face</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/pytorch.png" alt="CSS">
+                <p>Pytorch</p>
+            </div>
+        </div>
+        <div class="skills-container">
+            <div class="skill">
+                <img src="imgs/flask.png" alt="CSS">
+                <p>Flask</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/numpy.png" alt="CSS">
+                <p>Numpy</p>
+            </div>
+            <div class="skill">
+                <img src="imgs/pandas.png" alt="CSS">
+                <p>Pansas</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out to me!</p>
+        <ul>
+            <li></li>
+            <li>Email: <a href="mailto:yashwanthmn1@gmail.com">yashwanthmn1@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yashwanth-m-n-a84523187/"
+                    target="_blank">linkedin.com/in/yashwanth-m-n</a></li>
+            <li>GitHub: <a href="https://github.com/YashwanthMN1" target="_blank">github.com/yashwanthmn1</a></li>
+        </ul>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+
+</html>
