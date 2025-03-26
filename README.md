@@ -6,8 +6,8 @@ This is a simple portfolio built with [FastAPI](https://fastapi.tiangolo.com/) t
 ```
 portfolio/
 ├── main.py              # FastAPI application
-└── static/             # Folder for static files 
-    └── index.html      #  your resume
+└── imgs/             # Folder for static files 
+    └── all images      #  images required for index.html
 
 ```
 - `main.py`: This is the FastAPI application that serves the `index.html` file as the main route (`/`).
