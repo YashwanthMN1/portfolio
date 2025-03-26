@@ -7,6 +7,6 @@ app = FastAPI()
 app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
 @app.get("/", response_class=HTMLResponse)
-async def read_resume():
+def read_resume():
     with open("index.html", "r") as f:
         return HTMLResponse(content=f.read(), status_code=200)
