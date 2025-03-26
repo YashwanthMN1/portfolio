@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/imgs", StaticFiles(directory="static"), name="imgs")
+app.mount("/imgs", StaticFiles(directory="imgs"), name="imgs")
 
 @app.get("/", response_class=HTMLResponse)
 async def read_resume():
